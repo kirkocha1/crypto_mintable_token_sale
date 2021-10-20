@@ -15,19 +15,17 @@ module.exports = {
         },
         ganache: {
             provider: function() {
-                return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:7545", 0);
+                return new HDWalletProvider(process.env.MNEMONIC, "HTTP://127.0.0.1:7545", MetaMaskAccountIndex);
             },
             port: 7545,
             network_id: "5777",
-            host: "127.0.0.1"
+            host: "127.0.0.1",
+            chain_id: "9999"
         }
     },
     compilers: {
         solc: {
             version: "^0.8.0"
         }
-    },
-    rpc: {
-        port: 7545
     }
 };
