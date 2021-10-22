@@ -2,12 +2,12 @@
   "name": "ebd_tokenization_project",
   "version": "1.0.0",
   "dependencies": {
-    "@openzeppelin/contracts": "^3.0.0-beta.0",
-    "@truffle/hdwallet-provider": "^1.0.32",
+    "@openzeppelin/contracts": "^4.3.2",
+    "@truffle/hdwallet-provider": "1.2.2",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-bn": "^0.2.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "10.0.0"
   },
   "devDependencies": {},
   "scripts": {
