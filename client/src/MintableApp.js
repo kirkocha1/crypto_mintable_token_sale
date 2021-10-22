@@ -22,8 +22,8 @@ class MintableApp extends Component {
       //this.networkId = await this.web3.eth.net.getId(); <<- this doesn't work with MetaMask anymore
       //this network_id is hardcoded because chainId and networkId are not the same concept. If you compile contract with network id that differes from chainid
       // you should use metwork id from truffle-config.js for your development 
-      this.networkId = 6001
-
+      this.networkId = await this.web3.eth.net.getId()
+      console.log(this.networkId)
       this.udemyFinalCourseToken = new this.web3.eth.Contract(
         UdemyFinalCourseToken.abi,
         UdemyFinalCourseToken.networks[this.networkId] && UdemyFinalCourseToken.networks[this.networkId].address,
