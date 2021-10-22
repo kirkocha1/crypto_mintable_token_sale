@@ -18,7 +18,7 @@ module.exports = {
                 return new HDWalletProvider(process.env.MNEMONIC, "HTTP://127.0.0.1:7545", MetaMaskAccountIndex);
             },
             port: 7545,
-            network_id: "6001",
+            network_id: process.env.NETWORK_ID,
             host: "127.0.0.1"
         }
     },
