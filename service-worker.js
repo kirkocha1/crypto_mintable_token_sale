@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/crypto_mintable_token_sale/precache-manifest.e3130cf6da3984950cf8cc9c3b7ecc4c.js"
+  "/crypto_mintable_token_sale/precache-manifest.d11aa00223ebfa2a092b44f74ccdfa5e.js"
 );
 
 self.addEventListener('message', (event) => {
